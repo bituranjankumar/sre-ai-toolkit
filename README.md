@@ -1,6 +1,6 @@
 # 🛠️ SRE AI Toolkit
 
-A growing, weekly-updated collection of scripts, tools, and real-world SRE/DevOps solutions — built by a Senior SRE with 11+ years of experience.
+A growing collection of scripts, tools, and real-world SRE/DevOps solutions — built by a Senior SRE with 11+ years of experience.
 
 **Goal:** Help SRE, DevOps, and platform engineers solve real problems faster with practical scripts and AI-augmented tooling.
 
@@ -17,9 +17,9 @@ sre-ai-toolkit/
 
 ## 🗂️ Scripts
 
-| Week | Script | Description |
-|------|--------|-------------|
-| 01 | [DataDog Top P99 Endpoints](./scripts/datadog/top-p99-endpoints/) | Fetch top 10 slowest P99 latency endpoints from DataDog API |
+| Script | Description |
+|--------|-------------|
+| [DataDog Top P99 Endpoints](./scripts/datadog/top-p99-endpoints/) | Fetch the top 10 slowest P99 latency endpoints from the DataDog API |
 
 ---
 
@@ -30,4 +30,4 @@ Built by **Ranjan Kumar B** — Senior SRE at Grab, Kuala Lumpur.
 - 🔗 [LinkedIn](https://www.linkedin.com/in/b-ranjan-kumar)
 - 🐙 [GitHub](https://github.com/bituranjankumar)
 
-*Updated weekly. Star ⭐ the repo to follow along!*
+*Star ⭐ the repo to follow along!*
