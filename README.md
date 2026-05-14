@@ -8,18 +8,20 @@ A growing collection of scripts, tools, and real-world SRE/DevOps solutions — 
 
 ## 📂 Repository Structure
 
-```
+\`\`\`
 sre-ai-toolkit/
-├── scripts/           # Practical scripts for SRE/DevOps workflows
-│   └── datadog/       # DataDog automation scripts
-└── linkedin-posts/    # Source content for LinkedIn posts
-```
+├── scripts/
+│   ├── datadog/          # DataDog automation scripts
+│   └── github-actions/   # GitHub Actions analysis scripts
+└── linkedin-posts/       # Source content for LinkedIn posts
+\`\`\`
 
 ## 🗂️ Scripts
 
 | Script | Description |
 |--------|-------------|
 | [DataDog Top P99 Endpoints](./scripts/datadog/top-p99-endpoints/) | Fetch the top 10 slowest P99 latency endpoints from the DataDog API |
+| [GitHub Actions Slow Workflow Analyser](./scripts/github-actions/slow-workflows/) | Surface your top N slowest GitHub Actions workflows with P95/P99 stats — great for DORA analysis |
 
 ---
 
