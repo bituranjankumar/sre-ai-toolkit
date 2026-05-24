@@ -48,7 +48,7 @@ python gh_ci_regression.py
 ```
 ============================================================================
   GitHub Actions CI Regression Report
-  Repo     : grabpay/payment-gateway  |  Branch : main
+  Repo     : xxx/payment-gateway  |  Branch : main
   Split at : 2026-05-21 14:30 UTC
   Window   : 7 days before / 7 days after
   Threshold: >15% increase flagged as regression
