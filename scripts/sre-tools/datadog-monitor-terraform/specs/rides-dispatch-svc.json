@@ -1,0 +1,34 @@
+{
+  "service": "rides-dispatch-svc",
+  "team": "mobility-platform",
+  "env": "production",
+  "notify": ["@slack-mobility-platform-alerts", "@pagerduty-mobility-platform"],
+  "monitors": [
+    {
+      "name": "high error rate",
+      "type": "metric alert",
+      "query": "sum(last_5m):sum:trace.http.request.errors{service:rides-dispatch-svc,env:production}.as_count() / sum:trace.http.request.hits{service:rides-dispatch-svc,env:production}.as_count() > 0.02",
+      "message": "Error rate above 2% for 5 minutes.\nCheck the dispatch matching queue first — this is usually a downstream timeout, not us.\nRunbook: go/dispatch-svc-runbook",
+      "critical": 0.02,
+      "warning": 0.01,
+      "evaluation_delay": 300
+    },
+    {
+      "name": "p99 latency breach",
+      "type": "metric alert",
+      "query": "percentile(last_10m):p99:trace.http.request.duration{service:rides-dispatch-svc,env:production} > 1.5",
+      "message": "p99 latency over 1.5s for 10 minutes. Likely the matching engine — check queue depth before paging upstream teams.",
+      "critical": 1.5,
+      "warning": 1.0
+    },
+    {
+      "name": "matching queue depth",
+      "type": "metric alert",
+      "query": "avg(last_5m):avg:dispatch.queue.depth{service:rides-dispatch-svc,env:production} > 5000",
+      "message": "Matching queue depth over 5000 for 5 minutes — drivers are waiting longer than usual to get matched.",
+      "critical": 5000,
+      "warning": 3000,
+      "renotify_interval": 30
+    }
+  ]
+}
