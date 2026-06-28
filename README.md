@@ -26,6 +26,7 @@ sre-ai-toolkit/
 | [GitHub Actions CI Regression Detector](./scripts/github-actions/ci-regression-detector/) | Compare workflow durations before vs after a deploy — flags regressions and improvements with avg/P95/P99 delta |
 | [SLO Burn Rate Calculator](./scripts/sre-tools/slo-burn-rate/) | Calculate your error budget burn rate and time-to-exhaustion — fast/slow burn classification per the Google SRE Workbook |
 | [Datadog Monitor Terraform Generator](./scripts/sre-tools/datadog-monitor-terraform/) | Generate `datadog_monitor` Terraform resource blocks from a small JSON service spec — consistent naming, tags, and alerting defaults instead of copy-paste HCL |
+| [TLS Cert Expiry Scanner](./scripts/sre-tools/tls-cert-expiry-scanner/) | Scan a list of services for TLS certificate expiry via a real handshake — flags anything inside a warning/critical window before customers see SSL errors |
 
 ---
 
