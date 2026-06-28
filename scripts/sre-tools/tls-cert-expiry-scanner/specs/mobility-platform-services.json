@@ -1,0 +1,36 @@
+[
+  {
+    "name": "rides-dispatch-svc",
+    "host": "dispatch.internal.grab-mobility.com",
+    "port": 443,
+    "team": "mobility-platform"
+  },
+  {
+    "name": "driver-matching-api",
+    "host": "matching.internal.grab-mobility.com",
+    "port": 443,
+    "team": "mobility-platform"
+  },
+  {
+    "name": "payments-gateway",
+    "host": "payments-gw.internal.grab-mobility.com",
+    "port": 8443,
+    "team": "payments-platform",
+    "critical_days": 5
+  },
+  {
+    "name": "driver-onboarding-portal",
+    "host": "onboarding.internal.grab-mobility.com",
+    "port": 443,
+    "team": "driver-experience",
+    "warning_days": 45
+  },
+  {
+    "name": "legacy-fare-calculator",
+    "host": "fare-calc.internal.grab-mobility.com",
+    "port": 443,
+    "team": "mobility-platform",
+    "warning_days": 60,
+    "critical_days": 21
+  }
+]
