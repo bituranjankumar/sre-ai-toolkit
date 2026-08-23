@@ -1,0 +1,75 @@
+[
+  {
+    "name": "KafkaConsumerLagHigh",
+    "severity": "critical",
+    "team": "data-platform",
+    "runbook_url": "https://wiki.grab-internal.com/runbooks/kafka-consumer-lag"
+  },
+  {
+    "name": "PaymentGatewayTimeout",
+    "severity": "critical",
+    "team": "payments-platform"
+  },
+  {
+    "name": "PaymentGatewayErrorRateHigh",
+    "severity": "critical",
+    "team": "payments-platform",
+    "runbook_url": "https://wiki.grab-internal.com/runbooks/payment-gateway-errors"
+  },
+  {
+    "name": "PodCrashLoopBackOff",
+    "severity": "warning",
+    "team": "platform-engineering"
+  },
+  {
+    "name": "NodeDiskPressure",
+    "severity": "warning",
+    "team": "platform-engineering"
+  },
+  {
+    "name": "HorizontalPodAutoscalerMaxed",
+    "severity": "warning",
+    "team": "platform-engineering"
+  },
+  {
+    "name": "RidesDispatchLatencyHigh",
+    "severity": "critical",
+    "team": "mobility-platform"
+  },
+  {
+    "name": "DriverMatchingQueueDepthHigh",
+    "severity": "warning",
+    "team": "mobility-platform"
+  },
+  {
+    "name": "DriverOnboardingJobFailed",
+    "severity": "warning",
+    "team": "driver-experience"
+  },
+  {
+    "name": "SLOBurnRateHigh",
+    "severity": "critical",
+    "team": "platform-engineering",
+    "runbook_url": "https://wiki.grab-internal.com/runbooks/slo-burn-rate"
+  },
+  {
+    "name": "IngressCertExpirySoon",
+    "severity": "warning",
+    "team": "platform-engineering"
+  },
+  {
+    "name": "RedisEvictionRateHigh",
+    "severity": "warning",
+    "team": "data-platform"
+  },
+  {
+    "name": "EtcdDiskLatencyHigh",
+    "severity": "critical",
+    "team": "platform-engineering"
+  },
+  {
+    "name": "GRPCErrorBudgetBurning",
+    "severity": "warning",
+    "team": "mobility-platform"
+  }
+]
