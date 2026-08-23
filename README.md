@@ -27,6 +27,7 @@ sre-ai-toolkit/
 | [SLO Burn Rate Calculator](./scripts/sre-tools/slo-burn-rate/) | Calculate your error budget burn rate and time-to-exhaustion — fast/slow burn classification per the Google SRE Workbook |
 | [Datadog Monitor Terraform Generator](./scripts/sre-tools/datadog-monitor-terraform/) | Generate `datadog_monitor` Terraform resource blocks from a small JSON service spec — consistent naming, tags, and alerting defaults instead of copy-paste HCL |
 | [TLS Cert Expiry Scanner](./scripts/sre-tools/tls-cert-expiry-scanner/) | Scan a list of services for TLS certificate expiry via a real handshake — flags anything inside a warning/critical window before customers see SSL errors |
+| [Runbook Coverage Checker](./scripts/sre-tools/runbook-coverage-checker/) | Scan an alert inventory against a runbooks directory and report coverage gaps by severity and team — catch missing runbooks before an AI incident tool (or an outage) does |
 
 ---
 
